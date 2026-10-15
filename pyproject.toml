@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sleepcl"
+version = "0.1.0"
+description = "Sleep closed-loop pipeline"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy",
+  "scipy",
+  "pandas",
+  "mne",
+  "scikit-learn",
+  "matplotlib",
+  "pyyaml",
+  "tqdm",
+  "joblib",
+  "rich",
+]
+
+[project.optional-dependencies]
+dev = ["ruff", "black"]
+eegnet = ["torch"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

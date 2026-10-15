@@ -1,0 +1,39 @@
+# Local environments and Python caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.vscode/
+
+# Datasets, saved models and generated research output
+data/
+runs/
+*.edf
+*.fif
+*.joblib
+*.pkl
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.log
+
+# Private/internal working material
+personal_docs/
+sleepcl_backup.yml
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+# Local reports/figures (explicitly track selected reviewed assets if needed)
+*.png
+*.pdf
